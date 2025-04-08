@@ -1,8 +1,9 @@
-/*Irene Carrillo Jaramillo, April 7, 2025
+/*Irene Carrillo Jaramillo, April 6, 2025
  *M4 Programming Assignment. This test program will store 50,000 integers
  in LinkedList. This will test the time to traverse using iterator vs get(index).
  */
 
+ //This imports whats needed to run the program.
 import java.util.LinkedList;
 import java.util.Iterator;
 
@@ -65,10 +66,10 @@ public class LinkedTraverseTest{
 }
 
 /*
-Explanation:
-When using an iterator to traverse the LinkedList, the performance is much faster compared to using get(index).
-This is because LinkedList does not provide constant-time access by index. Each call to get(i) takes O(i) time
+The results:
+When using an iterator to traverse the LinkedList, the process is faster compared to using get(index).
+This is because LinkedList don't provide constant-time access by index. Each call to get(i) takes O(i) time
 since it has to walk through the list from the beginning each time. So looping through it with get(i) results in
-an O(n^2) operation. In contrast, using an iterator is O(n), making it significantly more efficient especially
-as the list size grows. This is why the get(index) method is much slower with 500,000 elements.
+an O(n^2) operation. However, using an iterator is O(n), making it significantly more efficient especially
+as the list size grows. This is why the get(index) method is much slower with 500,000 integers.
 */
