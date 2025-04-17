@@ -18,11 +18,13 @@
              return;
          }
  
+        //This will make sure it is sorted in Ascending order.
          System.out.println("Ascending Order:");
          for (String word : wordSet) {
              System.out.println(word);
          }
  
+        //This will sort it in descending order.
          System.out.println("\nDescending Order:");
          List<String> descendingList = new ArrayList<>(wordSet);
          Collections.reverse(descendingList);
@@ -51,7 +53,7 @@
          return wordSet;
      }
  
-     // Test function to verify functionality
+     //This will test function to verify functionality.
      public static void runTest() {
          System.out.println("\nRunning Test...");
  
